@@ -90,35 +90,36 @@ croix.addEventListener("click", () => {
 
 
 
-// surveillance
+// // surveillance
 
 
 
 
-const bouton1 = document.getElementById('bouton1');
-const bouton2 = document.getElementById('bouton2');
-const resultat = document.getElementById('resultat');
+// const bouton1 = document.querySelector('.bouton');
+// const bouton2 = document.querySelector('.btn');
+// const resultat1 = document.querySelector('.resultat');
 
-bouton1.addEventListener('click', () => {
-    localStorage.setItem('premierClic', 'true');
-});
+// bouton1.addEventListener('click', () => {
+//     localStorage.setItem('premierClic', 'true');
+// });
 
-bouton2.addEventListener('click', () => {
-    if (localStorage.getItem('premierClic') === 'true') {
-        const date = new Date();
-        const heure = date.toLocaleTimeString();
-        const message = "Les deux boutons ont été cliqués à " + heure;
+// bouton2.addEventListener('click', () => {
+//     if (localStorage.getItem('premierClic') === 'true') {
+//         const date = new Date();
+//         const heure = date.toLocaleTimeString();
+//         const message = "Les deux boutons ont été cliqués à " + heure;
 
-        const nouveauParagraphe = document.createElement('p');
-        nouveauParagraphe.textContent = message;
-        resultat.appendChild(nouveauParagraphe);
+//         const nouveauParagraphe = document.createElement('p');
+//         nouveauParagraphe.textContent = message;
+//         resultat1.appendChild(nouveauParagraphe);
 
-        // Effacer la valeur pour réinitialiser
-        localStorage.removeItem('premierClic');
-    } else {
-        alert("Veuillez cliquer sur le premier bouton avant le second.");
-    }
-});
+//         // Effacer la valeur pour réinitialiser
+//         localStorage.removeItem('premierClic');
+//     } 
+//     // else {
+//     //     alert("Veuillez cliquer sur le premier bouton avant le second.");
+//     // }
+// });
 
 
 
